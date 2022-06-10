@@ -1,0 +1,162 @@
+body header .tituloUni .uniDibu {
+  width: 30%;
+  animation-name: bailaUni;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s; }
+
+@keyframes bailaUni {
+  from {
+    transform: scale(0.5); }
+  to {
+    transform: scale(1); } }
+
+body header .tituloUni h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 4.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: grey;
+  padding: 0.5rem;
+  width: 70%; }
+
+body .principal section h3, main .meses .misAventuras h3, main .crecimientoMeses h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
+  font-weight: lighter;
+  text-align: center;
+  padding-bottom: 0.5rem; }
+
+body .principal section ul li, main .crecimientoMeses ul li {
+  font-family: 'Amatic SC', cursive;
+  font-size: x-large;
+  list-style: circle; }
+
+body {
+  background-color: #f7f4f8; }
+  body header .tituloUni {
+    display: flex;
+    align-items: center; }
+  body header nav ul {
+    display: flex;
+    justify-content: space-around; }
+    body header nav ul li a {
+      text-decoration: none;
+      color: grey; }
+    body header nav ul .navCatalina {
+      font-family: 'Amatic SC', cursive;
+      font-size: 1rem;
+      font-weight: bolder;
+      list-style: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: #ffc8a2; }
+    body header nav ul .navPrimermes {
+      font-family: 'Amatic SC', cursive;
+      font-size: 1rem;
+      font-weight: bolder;
+      list-style: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: #b5ead7; }
+    body header nav ul .navSegundomes {
+      font-family: 'Amatic SC', cursive;
+      font-size: 1rem;
+      font-weight: bolder;
+      list-style: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: #ff9aa2; }
+    body header nav ul .navTercermes {
+      font-family: 'Amatic SC', cursive;
+      font-size: 1rem;
+      font-weight: bolder;
+      list-style: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: #ffffb5; }
+    body header nav ul .navContacto {
+      font-family: 'Amatic SC', cursive;
+      font-size: 1rem;
+      font-weight: bolder;
+      list-style: none;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: #cbaacb; }
+  body .principal {
+    justify-content: center;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-areas: "miNacimiento miNacimiento" "video video" "seccionUno seccionDos"; }
+    body .principal .miNacimiento {
+      grid-area: miNacimiento; }
+      body .principal .miNacimiento h2 {
+        text-align: center;
+        font-family: 'Amatic SC', cursive;
+        font-size: 3rem;
+        padding-bottom: 0.5rem;
+        color: #403f3f; }
+      body .principal .miNacimiento p {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1rem; }
+    body .principal .video {
+      grid-area: video;
+      justify-self: center;
+      padding: 1rem; }
+    body .principal section ul {
+      text-align: center; }
+    body .principal .cartaNatal {
+      grid-area: seccionUno;
+      justify-self: center; }
+    body .principal .familiaDatos {
+      grid-area: seccionDos;
+      align-self: center; }
+  body footer {
+    text-align: right;
+    padding: 0.5rem; }
+    body footer .ig {
+      display: flex;
+      justify-content: end; }
+      body footer .ig .instagram {
+        color: black;
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bolder; }
+    body footer h4 {
+      font-size: 0.5rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.contacto {
+  border-style: double;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-evenly; }
+
+main .tituloMeses {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center; }
+
+main .meses {
+  display: flex; }
+  main .meses .misAventuras {
+    width: 50%;
+    padding: 0.5rem; }
+    main .meses .misAventuras p {
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 1rem; }
+  main .meses .imgMeses {
+    width: 50%;
+    justify-items: center; }
+
+main .crecimientoMeses ul {
+  text-align: center; }

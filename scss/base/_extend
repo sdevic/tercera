@@ -1,0 +1,47 @@
+%animacion{
+    
+        width: 30%;
+        animation-name: bailaUni;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+    
+    @keyframes bailaUni{
+        from{
+            transform: scale(0.5);
+        }
+    
+        to{
+            transform: scale(1);
+        }
+         
+    } 
+}
+
+%tituloPrincipal{
+        font-family: 'Sacramento', cursive;
+        font-size: 4.5rem;
+        font-weight: lighter;
+        text-align: center;
+        color: grey;
+        padding: 0.5rem;
+        width: 70%;
+}
+
+%titulo3{
+    
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+%listasDatos{
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
+    list-style: circle;  
+      
+    }
+        
+    
