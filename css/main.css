@@ -13,11 +13,10 @@ body header .tituloUni .uniDibu {
 
 body header .tituloUni h1 {
   font-family: 'Sacramento', cursive;
-  font-size: 4.5rem;
+  font-size: 6rem;
   font-weight: lighter;
   text-align: center;
-  color: grey;
-  padding: 0.5rem;
+  color: #4e4e4e;
   width: 70%; }
 
 body .principal section h3, main .meses .misAventuras h3, main .crecimientoMeses h3 {
@@ -25,70 +24,77 @@ body .principal section h3, main .meses .misAventuras h3, main .crecimientoMeses
   font-size: 2.5em;
   font-weight: lighter;
   text-align: center;
-  padding-bottom: 0.5rem; }
+  color: #403f3f; }
 
 body .principal section ul li, main .crecimientoMeses ul li {
   font-family: 'Amatic SC', cursive;
   font-size: x-large;
-  list-style: circle; }
+  list-style-type: circle; }
 
 body {
-  background-color: #f7f4f8; }
+  background-color: #d1e2db;
+  margin: 0;
+  padding: 0; }
+  body header nav {
+    background-color: #d1e2db;
+    z-index: 100;
+    position: fixed;
+    width: 100%; }
+    body header nav ul {
+      display: flex;
+      justify-content: space-around; }
+      body header nav ul li a {
+        text-decoration: none;
+        color: grey;
+        transition: 1s; }
+      body header nav ul li :hover {
+        font-weight: bolder; }
+      body header nav ul .navCatalina {
+        font-family: 'Amatic SC', cursive;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: #ffc8a2; }
+      body header nav ul .navPrimermes {
+        font-family: 'Amatic SC', cursive;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: #b7eaf7; }
+      body header nav ul .navSegundomes {
+        font-family: 'Amatic SC', cursive;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: #ff9aa2; }
+      body header nav ul .navTercermes {
+        font-family: 'Amatic SC', cursive;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: #ffffb5; }
+      body header nav ul .navContacto {
+        font-family: 'Amatic SC', cursive;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: #cbaacb; }
   body header .tituloUni {
+    padding-top: 7rem;
     display: flex;
     align-items: center; }
-  body header nav ul {
-    display: flex;
-    justify-content: space-around; }
-    body header nav ul li a {
-      text-decoration: none;
-      color: grey; }
-    body header nav ul .navCatalina {
-      font-family: 'Amatic SC', cursive;
-      font-size: 1rem;
-      font-weight: bolder;
-      list-style: none;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 2rem;
-      background-color: #ffc8a2; }
-    body header nav ul .navPrimermes {
-      font-family: 'Amatic SC', cursive;
-      font-size: 1rem;
-      font-weight: bolder;
-      list-style: none;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 2rem;
-      background-color: #b5ead7; }
-    body header nav ul .navSegundomes {
-      font-family: 'Amatic SC', cursive;
-      font-size: 1rem;
-      font-weight: bolder;
-      list-style: none;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 2rem;
-      background-color: #ff9aa2; }
-    body header nav ul .navTercermes {
-      font-family: 'Amatic SC', cursive;
-      font-size: 1rem;
-      font-weight: bolder;
-      list-style: none;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 2rem;
-      background-color: #ffffb5; }
-    body header nav ul .navContacto {
-      font-family: 'Amatic SC', cursive;
-      font-size: 1rem;
-      font-weight: bolder;
-      list-style: none;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 2rem;
-      background-color: #cbaacb; }
   body .principal {
+    padding-top: 0;
     justify-content: center;
     padding: 1.5rem;
     display: grid;
@@ -104,7 +110,8 @@ body {
       body .principal .miNacimiento p {
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 1rem; }
+        font-size: 1rem;
+        color: #403f3f; }
     body .principal .video {
       grid-area: video;
       justify-self: center;
@@ -112,18 +119,26 @@ body {
     body .principal section ul {
       text-align: center; }
     body .principal .cartaNatal {
-      grid-area: seccionUno;
-      justify-self: center; }
+      display: none; }
     body .principal .familiaDatos {
-      grid-area: seccionDos;
-      align-self: center; }
+      display: none; }
+    @media screen and (min-width: 1000px) {
+      body .principal .cartaNatal {
+        display: block;
+        grid-area: seccionUno;
+        justify-self: center; }
+      body .principal .familiaDatos {
+        display: block;
+        grid-area: seccionDos;
+        align-self: center; } }
   body footer {
     text-align: right;
-    padding: 0.5rem; }
+    padding: 2rem; }
     body footer .ig {
       display: flex;
       justify-content: end; }
       body footer .ig .instagram {
+        padding-left: 0.5rem;
         color: black;
         text-decoration: none;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -143,20 +158,34 @@ main .tituloMeses {
   font-family: 'Amatic SC', cursive;
   font-size: 3rem;
   padding: 1rem;
-  text-align: center; }
+  text-align: center;
+  color: #403f3f; }
 
 main .meses {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   main .meses .misAventuras {
-    width: 50%;
-    padding: 0.5rem; }
+    padding: 1rem; }
     main .meses .misAventuras p {
       text-align: center;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-size: 1rem; }
+      font-size: 1rem;
+      color: #403f3f; }
   main .meses .imgMeses {
-    width: 50%;
-    justify-items: center; }
+    padding: 3rem;
+    max-width: 100%;
+    max-height: 100%; }
+    main .meses .imgMeses img {
+      width: 13rem; }
 
-main .crecimientoMeses ul {
-  text-align: center; }
+main .crecimientoMeses {
+  display: none; }
+  main .crecimientoMeses ul {
+    text-align: center; }
+    main .crecimientoMeses ul li {
+      list-style: none; }
+
+@media screen and (min-width: 1000px) {
+  main .crecimientoMeses {
+    display: block; } }

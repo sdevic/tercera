@@ -1,8 +1,8 @@
 // colores fondos, en una pagina no tiene mucho sentido, pero para aplicar lo aprendido lo hago
 
-$fondo: #f7f4f8;
+$fondo: #d1e2db;
 $botonCata: #ffc8a2;
-$boton1: #b5ead7;
+$boton1: #b7eaf7;
 $boton2: #ff9aa2;
 $boton3: #ffffb5;
 $botonCont: #cbaacb;

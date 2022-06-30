@@ -20,11 +20,10 @@
 
 %tituloPrincipal{
         font-family: 'Sacramento', cursive;
-        font-size: 4.5rem;
+        font-size: 6rem;
         font-weight: lighter;
         text-align: center;
-        color: grey;
-        padding: 0.5rem;
+        color: rgb(78, 78, 78);
         width: 70%;
 }
 
@@ -34,14 +33,15 @@
     font-size: 2.5em;
     font-weight: lighter;
     text-align: center;
-    padding-bottom: 0.5rem;
+    color: rgb(64, 63, 63);
+    
 }
 
 %listasDatos{
     font-family: 'Amatic SC', cursive;
     font-size: x-large;
-    list-style: circle;  
-      
+    list-style-type: circle;
+         
     }
         
     

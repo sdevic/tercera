@@ -12,29 +12,29 @@
 
 body{
     background-color: $fondo;
+    margin: 0;
+    padding: 0;
     header{
-        .tituloUni{
-            display: flex;
-            align-items: center;
-            h1 {
-                @extend %tituloPrincipal;
-            }
-        .uniDibu{
-            @extend %animacion;
-        }
-      
-            
-          
-        }
+
+       
         nav{
+            background-color: $fondo;
+            z-index: 100;
+            position: fixed;
+            width: 100%;
+            
             ul{
                 display: flex;
                 justify-content: space-around; 
                 li{
                     a{
                         text-decoration: none;
-                        color:grey 
+                        color:grey;
+                        transition: 1s;
                       }
+                    :hover{
+                        font-weight: bolder;
+                    }
                 }
                 .navCatalina{
                   @include botones;
@@ -63,9 +63,24 @@ body{
 
             }
         }
+        .tituloUni{
+            padding-top: 7rem;
+            display: flex;
+            align-items: center;
+            h1 {
+                @extend %tituloPrincipal;
+            }
+        .uniDibu{
+            @extend %animacion;
+        }
+      
+            
+          
+        }
     }
    .principal{
-       
+
+        padding-top: 0;
        @include grids;                 
     
        .miNacimiento{
@@ -81,6 +96,7 @@ body{
                 text-align: center;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 1rem;
+                color: rgb(64, 63, 63) ;
             }
 
             
@@ -89,6 +105,7 @@ body{
             grid-area: video;
             justify-self: center;
             padding: 1rem;
+            
        }
        section{
              h3{
@@ -103,23 +120,37 @@ body{
             }
        }
        .cartaNatal{
+            display: none;
+       }
+       .familiaDatos{
+            display: none;
+       }
+
+       @media screen and (min-width:1000px) {
+        .cartaNatal{
+            display:block;
             grid-area: seccionUno;
             justify-self: center;
             
-           
-       }
-       .familiaDatos{
+    
+        }
+        .familiaDatos{
+            display: block;
             grid-area: seccionDos;
-            align-self: center;
-       }
+            align-self: center;     
+        }
+        
+           
+    }
    }
    footer{
         text-align: right;
-        padding: 0.5rem;
+        padding: 2rem;
         .ig{
             display: flex;
             justify-content: end;
             .instagram{
+                padding-left: 0.5rem;
                 color: black;
                 text-decoration: none;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -156,12 +187,16 @@ main {
         font-size: 3rem;
         padding: 1rem;
         text-align: center;
+        color: rgb(64, 63, 63);
     }
     .meses{
         display: flex;
+        align-items: center;
+        justify-content: center;
+              
+        
         .misAventuras{
-            width: 50%;
-            padding: 0.5rem;
+            padding: 1rem;
             h3 {
                 @extend %titulo3;
      
@@ -170,14 +205,23 @@ main {
                 text-align: center;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 1rem;
+                color: rgb(64, 63, 63);
             }
         }
         .imgMeses{
-            width: 50%;
-            justify-items: center;
+            padding: 3rem;
+            max-width: 100%;
+            max-height: 100%;
+            
+            img {
+                width: 13rem;
+                
+            }
+                       
         }
     }
-    .crecimientoMeses{
+   .crecimientoMeses{
+        display: none;
         h3{
             @extend %titulo3;
 
@@ -186,13 +230,22 @@ main {
             text-align: center;
             li{
                 @extend %listasDatos;
+                list-style: none;
             }
 
-        }
+        }    
+   }
 
-        
-
+   @media screen and (min-width:1000px) {
+    .crecimientoMeses{
+        display: block      
+       
 
     }
+ 
+    
+   
+}
+
 }
 
